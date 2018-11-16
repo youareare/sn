@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+input[type="search"] {
+  outline: none;
+  border: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.sn_header {
+  background: #fa0;
+  height: 1.28571429rem;
+}
+.sn_header .container > a {
+  position: absolute;
+  top: 0;
+  width: 1.28571429rem;
+  height: 1.28571429rem;
+}
+.sn_header .container > a:first-child {
+  background: url(../images/icon_category.png) no-repeat center / 0.62857143rem 1rem;
+  left: 0;
+}
+.sn_header .container > a:last-child {
+  background: url(../images/icon_cart.png) no-repeat center / 0.88571429rem 0.91428571rem;
+  right: 0;
+}
+.sn_header .container > form {
+  width: 100%;
+  padding: 0 1.28571429rem;
+  height: 1.28571429rem;
+  line-height: 0rem;
+  position: relative;
+}
+.sn_header .container > form > span {
+  position: absolute;
+  left: 1.42857143rem;
+  top: 0.42857143rem;
+  width: 0.42857143rem;
+  height: 0.42857143rem;
+  background: url(../images/icon_search.png) no-repeat center / 0.42857143rem 0.42857143rem;
+}
+.sn_header .container > form input {
+  width: 100%;
+  height: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 0.85714286rem;
+  font-size: 0.34285714rem;
+  margin-top: 0.14285714rem;
+  border-radius: 4px;
+}
+.sn_banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sn_banner .container ul:first-child {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.sn_banner .container ul:first-child li {
+  float: left;
+  width: 10%;
+}
+.sn_banner .container ul:first-child li a {
+  display: block;
+  width: 100%;
+}
+.sn_banner .container ul:first-child li a img {
+  display: block;
+  width: 100%;
+}
+.sn_banner .container ul:last-child {
+  position: absolute;
+  bottom: 0.28571429rem;
+  right: 0.28571429rem;
+}
+.sn_banner .container ul:last-child li {
+  float: left;
+  margin-right: 0.22857143rem;
+  border: 1px solid #ccc;
+  width: 0.22857143rem;
+  height: 0.22857143rem;
+  border-radius: 50%;
+}
+.sn_banner .container ul:last-child li.now {
+  background-color: pink;
+}
